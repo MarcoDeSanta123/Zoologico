@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoológico de Guarulhos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Zoológico de Guarulhos - Cálculo de Consumo de Comida</h1>
+    <div class="formulario">
+        <label for="tipo-animal">Tipo de Animal:</label>
+        <input type="text" id="tipo-animal" placeholder="Leopardo">
+        <br>
+        <label for="quantidade-animais">Quantidade de Animais:</label>
+        <input type="number" id="quantidade-animais" placeholder="2">
+        <br>
+        <label for="custo-por-kilo">Custo estimado por kilo de comida:</label>
+        <input type="number" id="custo-por-kilo" placeholder="10">
+        <br>
+        <button id="calcular">Calcular</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dados de Saída:</th>
+                <th>Valores</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quantidade por de kilo por animal:</td>
+                <td id="consumo-diario-por-animal"></td>
+            </tr>
+            <tr>
+                <td>Quantidade por dia:</td>
+                <td id="consumo-diario-total"></td>
+            </tr>
+            <tr>
+                <td>Quantidade por mês:</td>
+                <td id="consumo-mensal"></td>
+            </tr>
+            <tr>
+                <td>Custo estimado por mês:</td>
+                <td id="custo-mensal"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
